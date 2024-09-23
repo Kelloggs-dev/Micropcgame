@@ -20,6 +20,8 @@ namespace Tset_Lib
                     Console.WriteLine(Les_Processeur[i]);
                 }
             }else Console.WriteLine("Le fichier csv n'est pas correcte");
+
+            Console.ReadLine();
         }
     }
 }

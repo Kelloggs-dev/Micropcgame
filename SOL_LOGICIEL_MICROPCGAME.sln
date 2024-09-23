@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIB_C_BASE", "LIB_C_BASE\LIB_C_BASE.csproj", "{27733646-7F16-4BA6-A99B-5ADAB05FE38E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LIB_C_BASE", "LIB_C_BASE\LIB_C_BASE.csproj", "{27733646-7F16-4BA6-A99B-5ADAB05FE38E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tset_Lib", "Tset_Lib\Tset_Lib.csproj", "{70888BC9-383E-4CFC-ADC5-54FCE46422FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tset_Lib", "Tset_Lib\Tset_Lib.csproj", "{70888BC9-383E-4CFC-ADC5-54FCE46422FE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "micropcgame", "micropcgame\micropcgame.csproj", "{83D05BAC-E965-4B76-9A15-3E7FA4E87818}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{70888BC9-383E-4CFC-ADC5-54FCE46422FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70888BC9-383E-4CFC-ADC5-54FCE46422FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70888BC9-383E-4CFC-ADC5-54FCE46422FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83D05BAC-E965-4B76-9A15-3E7FA4E87818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83D05BAC-E965-4B76-9A15-3E7FA4E87818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83D05BAC-E965-4B76-9A15-3E7FA4E87818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83D05BAC-E965-4B76-9A15-3E7FA4E87818}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

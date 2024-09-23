@@ -43,7 +43,7 @@ namespace LIB_C_BASE
             });
         }
 
-        private async Task Save_Data_En_Json(List<Dictionary<string, string>> P_Data_CSV, string P_Fichier_Nom_Json)
+        private async Task Save_Data_En_Json(List<Dictionary<string, string>> P_Data_CSV, string P_Fichier_Json)
         {
             // Configure JsonSerializerOptions pour éviter les échappements des caractères spéciaux
             var options = new JsonSerializerOptions
@@ -53,8 +53,13 @@ namespace LIB_C_BASE
             };
 
             //serialiser la list de dictionnaire en format json puis cree le fichier json
-            var Data_Json = await Task.Run(() => JsonSerializer.Serialize(P_Data_CSV,options));
-            await File.WriteAllTextAsync(P_Fichier_Nom_Json, Data_Json, Encoding.UTF8);
+            var Data_Json = await Task.Run(() => JsonSerializer.Serialize(P_Data_CSV, options));
+
+            // S'assurer que le répertoire existe, sinon le créer
+            Directory.CreateDirectory(Path.GetDirectoryName(P_Fichier_Json));
+
+            // Écrire le fichier JSON dans le dossier AppData
+            await File.WriteAllTextAsync(P_Fichier_Json, Data_Json, Encoding.UTF8);
         }
 
     }

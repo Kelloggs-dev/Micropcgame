@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+
+    <Style x:Key="Acadia" TargetType="{x:Type MediaElement}">
+        <Setter Property="Stretch" Value="Fill"/>
+        <Setter Property="Source" Value="pack://siteoforigin:,,,/Videos/Acadia.mp4"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="LoadedBehavior" Value="Manual"/>
+        <Setter Property="IsMuted" Value="True"/>
+    </Style>
+
+    <Style x:Key="JensMobile" TargetType="{x:Type MediaElement}">
+        <Setter Property="Stretch" Value="Fill"/>
+        <Setter Property="Source" Value="pack://siteoforigin:,,,/Videos/JensMobile.mp4"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        <Setter Property="VerticalAlignment" Value="Stretch"/>
+        <Setter Property="LoadedBehavior" Value="Manual"/>
+        <Setter Property="IsMuted" Value="True"/>
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,18 @@
+﻿<Application x:Class="micropcgame.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:micropcgame"
+             StartupUri="Presentation/Fenetre/C_SELECTION_FOURNISSEUR.xaml">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Ressource/Style_Fenetre.xaml"/>
+                <ResourceDictionary Source="/Ressource/Style_Bouton_Rond.xaml"/>
+                <ResourceDictionary Source="/Ressource/Style_Rectangle.xaml"/>
+                <ResourceDictionary Source="/Ressource/Style_Video.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

@@ -8,10 +8,20 @@ namespace LIB_C_BASE
     public class C_BASE
     {
         public string MON_FICHIER_CSV { get; set; }
-        const string MON_FICHIER_JSON = "catalogue_acadia.json";
+        private string MON_FICHIER_JSON {  get; set; }
+        const string Nom_Du_Json = "catalogue_acadia.json";
 
         public List<C_OBJET_INFORMATIQUE> Les_Objets_Informaique { get; set; }
-        
+
+        public C_BASE()
+        {
+            // Obtenir le chemin vers le dossier LocalAppData
+            var AppData_Path = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+
+            // Construire le chemin complet du fichier JSON
+            MON_FICHIER_JSON = Path.Combine(AppData_Path, "micropcgame", Nom_Du_Json);
+        }
+
         public bool Emplacemen_Fichier_CSV(string P_Emplacemen_Fichier)
         {
             if (File.Exists(MON_FICHIER_JSON))
